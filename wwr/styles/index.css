@@ -1,0 +1,59 @@
+:root {
+    --primary-color: #EBD4CB;
+    --secondary-color: #DA9F93;
+    --accent1-color: #D6465F;
+    --accent2-color: #890620;
+  
+    --heading-font: "IM Fell French Canon";
+    --paragraph-font: 'Oswald', sans-serif;
+  
+    --headline-color-on-white: #2C0703;  
+    --headline-color-on-color: #DA9F93; 
+    --paragraph-color-on-white: #890620; 
+    --paragraph-color-on-color: #B6465F; 
+    --paragraph-background-color: #DA9F93;
+  }
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+nav a, #hero-msg h1, #hero-msg h4, .button-box, main section{
+    text-align: center;
+    
+}
+body {
+    background-color: var(--primary-color);
+    margin: 0 auto;
+}
+header {
+    background-color: var(--accent1-color);
+}
+nav a:hover, .book, .join, .book:hover, .join:hover, #background, .msg, footer{
+    background-color: var(--primary-color);
+    width:75%;
+    margin: 0 auto;
+}
+
+nav a, nav a:hover, .home-title, h4, .book, .join, .book:hover, .join:hover, .msg h2, .msg p, footer h3, footer a, footer a:hover{
+    background-color: var(--paragraph-background-color);
+    color: var(--paragraph-color-on-color);
+    padding: 5px;
+}
+
+.icon{
+    width:80px;
+}
+
+nav a, .book, .join, footer a{
+    text-align: center;
+    color: var(--paragraph-color-on-color);
+    text-decoration: none;
+}
+
+footer p {
+    font-size: 1.2em;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
