@@ -21,6 +21,9 @@ nav a, #hero-msg h1, #hero-msg h4, .button-box, main section{
     text-align: center;
     
 }
+.card-img {
+    width:100%;
+}
 #hero-img{
     width:100%;
 }
