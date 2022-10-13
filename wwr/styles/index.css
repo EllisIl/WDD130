@@ -48,6 +48,8 @@ main section img {
 }
 .rivers-card, .camping-card, .rapids-card {
     margin: 200px 0;
+    width:50%;
+    margin: 0 auto;
 }
 body {
     background-color: var(--primary-color);
