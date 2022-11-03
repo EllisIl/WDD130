@@ -1,0 +1,35 @@
+:root {
+    --primary-color: #EBD4CB;
+    --secondary-color: #DA9F93;
+    --accent1-color: #D6465F;
+    --accent2-color: #890620;
+
+    --header-color: #d6465e78;
+    --menu-color: #DA9F9378;
+    --menu-hover-color: #EBD4CB78;
+
+    --heading-font: "IM Fell French Canon";
+    --paragraph-font: 'Oswald', sans-serif;
+  
+    --headline-color-on-white: #2C0703;  
+    --headline-color-on-color: #DA9F93; 
+    --paragraph-color-on-white: #890620; 
+    --paragraph-color-on-color: #B6465F; 
+    --paragraph-background-color: #DA9F93;
+ 
+  }
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+body {
+    background-color: var(--primary-color);
+}
+title {
+    background-color: var(--accent1-color);
+    color: var(--headline-color-on-color);
+    padding: 5px;
+}
+.question-list {
+    background-color: var(--secondary-color);
+}
