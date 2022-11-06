@@ -17,7 +17,6 @@
     </header>
     <main>
 
-      <!-- ------------------------Steps 2-3------------------------------ -->
       <hr>
       <h2>Overview</h2>
       <h3>Purpose</h3>
@@ -37,7 +36,6 @@
         Style Guide
       </h2>
 
-      <!-- ------------------------Steps 4-8------------------------------ -->
 
       <h3>
         Color Palette
@@ -54,7 +52,6 @@
         <tr><td class="primary">[#EECFD4]</td><td class="secondary">[#EFB9CB]</td><td class="accent1">[#E6ADEC]</td><td class="accent2">#C286E8</td></tr>
       </table>
 
-      <!-- ------------------------Step 9------------------------------ -->
 
       <h3>
         Typography
@@ -80,7 +77,6 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
       </p>
 
-      <!-- ------------------------Step 10------------------------------ -->
 
       <h3>
         Navigation
@@ -118,7 +114,7 @@
 
       </div>
 
-      <!-- --------Content Section -------------- -->
+
       <hr>
       <h2>
         Content
@@ -126,19 +122,20 @@
       <h3>Home page</h3>
       <p>
         Welcome to creating your first Discord bot using JavaScript! This tutorial will teach you everything, from creating the account for the bot, to writing a super simple command. Sometimes coding for the first time can be very intimidating but I hope to make this tutorial as open as possible, even for somebody who has never written a single line of code.
-      The first part of creating a bot in Discord is going to be creating the account for the bot. Go to https://discord.com/developers and sign into your Discord account
- After logging in, click “New Application” in the top right corner of the page
-Then, create a name for your bot and agree to the terms of service and press create.
+        The first part of creating a bot in Discord is going to be creating the account for the bot. Go to https://discord.com/developers and sign into your Discord account
+        After logging in, click “New Application” in the top right corner of the page
+        Then, create a name for your bot and agree to the terms of service and press create.
 
-Then you’ll see a page similar to this where you can add a profile picture, change the name of your bot,and add to your About Me section of the bot’s profile. On the left side, click on the “bot” tab and press “add bot” and “Yes, do it!”. Don’t worry about the warning. 
-Now we’ll allow the bot to read messages sent. Scroll down on the bot page and turn on “message content intent” and save the changes.
-Next you’ll need to retrieve your bot’s “token”, this token is essentially the login for your bot DO NOT SHARE THIS. If somebody else gets a hold of your bot token they could use it maliciously. Copy your token and save it for later
-Next we’ll be inviting your bot to your server, on the menu on the left, open the OAuth2 tab and select the URL Generator. You will see a long list of scopes, the only one you’ll need to check off is the “bot” 
-Next, you’ll select your bot permissions. You can modify this as much as you need but to make it as simple as possible, add the “administrator” permission. This will grant all permissions to give your bot complete access to the server.
-Then, copy the generator URL at the bottom and paste it into your browser. Then invite it to the server you would like. You will then authorize the bot’s permissions.
-You’ve now added the bot to your server!
-</p>
-      <p>Images for the Home page</p>
+        Then you’ll see a page similar to this where you can add a profile picture, change the name of your bot,and add to your About Me section of the bot’s profile. On the left side, click on the “bot” tab and press “add bot” and “Yes, do it!”. Don’t worry about the warning. 
+        Now we’ll allow the bot to read messages sent. Scroll down on the bot page and turn on “message content intent” and save the changes.
+        Next you’ll need to retrieve your bot’s “token”, this token is essentially the login for your bot DO NOT SHARE THIS. If somebody else gets a hold of your bot token they could use it maliciously. Copy your token and save it for later
+        Next we’ll be inviting your bot to your server, on the menu on the left, open the OAuth2 tab and select the URL Generator. You will see a long list of scopes, the only one you’ll need to check off is the “bot” 
+        Next, you’ll select your bot permissions. You can modify this as much as you need but to make it as simple as possible, add the “administrator” permission. This will grant all permissions to give your bot complete access to the server.
+        Then, copy the generator URL at the bottom and paste it into your browser. Then invite it to the server you would like. You will then authorize the bot’s permissions.
+        You’ve now added the bot to your server!
+      </p>
+       
+        <p>Images for the Home page</p>
         <img src="images/login.png" alt="login">
         <img src="images/newapplication.png" alt="newapplication">
         <img src="images/namebot.png" alt="namebot">
@@ -155,7 +152,7 @@ You’ve now added the bot to your server!
         <img src="images/addtoserver.png" alt="addtoserver">
         <img src="images/authorize.png" alt="authorize">
         <img src="images/joined.png" alt="joined">
-      </ul>
+       
       <h3>Getting the bot online</h3>
       <p>
         Here’s where the fun part happens. First you will need to install Node.js here and follow the install instructions. Then, install a code editor, I suggest Visual Studio Code. 
@@ -173,6 +170,7 @@ You’ve now added the bot to your server!
         Congratulations! Your bot is now online!
       </p>
       <p>Images for the Page 2</p>
+       
         <img src="images/node.png" alt="node">
         <img src="images/vsc.png" alt="vsc">
         <img src="images/botfolder.png" alt="botfolder">
@@ -189,7 +187,7 @@ You’ve now added the bot to your server!
         <img src="images/onceready.png" alt="onceready">
         <img src="images/connectedcode.png" alt="connectedcode">
         <img src="images/connectedterminal.png" alt="connected">
-      </ul>
+       
       <h3>Getting the bot online</h3>
       <p>
         Now that your bot is online, you’ll need to add some interactions with it. We’ll create a simple ‘ping’ command that will send back the message “pong”. First, you’ll need to have code run whenever a message is sent. Add “client.on(‘messageCreate’, message => {});” between the login and our connect code. This will let the code know whenever a message is sent and then the content of the message will be stored in the “message” that we placed afterwards.
@@ -200,13 +198,14 @@ You’ve now added the bot to your server!
         Congratulations! Your bot is now working! You can add as many of these commands as you would like!
       </p>
       <p>Images for the Page 3</p>
+       
         <img src="images/messagecreate.png" alt="messagecreate">
         <img src="images/authorbot.png" alt="authorbot">
         <img src="images/messageping.png" alt="ping">
         <img src="images/sendpong.png" alt="sendpong">
         <img src="images/finalimage.png" alt="pingpong">
         <img src="images/finalcode.png" alt="finalcode">
-      </ul>
+       
       <hr>
       <h2>
         Wireframes
@@ -218,19 +217,19 @@ You’ve now added the bot to your server!
       <p>         
         Page continues with content
       </p>
-      <img src="./images/Personal Plan.drawio.png" alt="home page wireframe" width="50%">
+      <img src="./images/personalplan.png" alt="home page wireframe" width=300>
 
       <h3>[Page 2]</h3>
       <p>         
         Page continues with content
       </p>
-      <img src="./images/Personal Plan.drawio.png" alt="home page wireframe" width="50%">
+      <img src="./images/personalplan.png" alt="home page wireframe" width=300>
 
       <h3>[Page 3]</h3>
       <p>         
         Page continues with content
       </p>
-      <img src="./images/Personal Plan.drawio.png" alt="home page wireframe" width="50%">
+      <img src="./images/personalplan.png" alt="home page wireframe" width=300>
     </main>
   </body>
 
