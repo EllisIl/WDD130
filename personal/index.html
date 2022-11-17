@@ -5,9 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EasyBot</title>
+    <link rel="stylesheet" href="styles/home.css">
 </head>
 <body>
-    <h2>Welcome to creating your first Discord bot using JavaScript! This tutorial will teach you everything, from creating the account for the bot, to writing a super simple command. Sometimes coding for the first time can be very intimidating but I hope to make this tutorial as open as possible, even for somebody who has never written a single line of code.</h2>
+    <header>
+        <a id="logo_link" href="index.html">
+            <img class = "logo" src="images/easybotlogo.png" alt="easybotlogo">
+        </a>
+        <div class="navbar">
+            <nav>
+                <a href="#" id="active">Home</a>
+                <a href="page2.html">Getting the Bot Online</a>
+                <a href="page3.html">Basic Commands</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h2>Welcome to creating your first Discord bot using JavaScript! This tutorial will teach you everything, from creating the account for the bot, to writing a super simple command. Sometimes coding for the first time can be very intimidating but I hope to make this tutorial as open as possible, even for somebody who has never written a single line of code.</h2>
     
     <h1>Creating the bot</h1>
 
@@ -47,70 +61,6 @@
     <h2>You've now added the bot to your server!</h2>
     <img src="images/joined.png" alt="joined">
 
-
-
-    <h1>Getting the bot online</h1>
-
-    <h2>Here’s where the fun part happens. First you will need to install Node.js and follow the install instructions. Then, install a code editor, I suggest Visual Studio Code.</h2>
-    <img src="images/node.png" alt="node">
-    <img src="images/vsc.png" alt="vsc">
-
-    <h2>Next, create a folder and open it with Visual Studio Code by right clicking</h2>
-    <img src="images/botfolder.png" alt="botfolder">
-    <img src="images/openfolder.png" alt="openfolder">
-
-    <h2>Once opened, create a file called “index.js”. This will be where you write the code</h2>
-    <img src="images/addfile.png" alt="addfile">
-    <img src="images/indexjs.png" alt="indexjs">
-
-    <h2>We will now install discord.js. At the top of your screen you will see an option called “terminal”. Press on this option and open a new terminal.</h2>
-    <img src="images/newterminal.png" alt="newterminal">
-
-    <h2>At the bottom of your screen, in the terminal, type “npm install discord.js”. Npm is a tool that allows you to install thousands of libraries but for now, we’ll only be installing the Discord JavaScript library. This will add multiple files to your folder, but you can ignore them and open your index.js file by clicking on it.</h2>
-    <img src="images/installdiscordjs.png" alt="installjs">
-    <img src="images/newfolders.png" alt="folders">
-
-    <h2>Now we can begin coding! First you’ll need to import the discord.js package by typing “const {Client, Events, GatewayIntentBits} = require(‘discord.js’);”</h2>
-    <img src="images/imports.png" alt="imports">
-
-    <h2>Next we’ll add intents to allow our bot to interface with specific events in Discord. Add “const client = new Client({intents:[GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent]});” on a new line beneath the first.</h2>
-    <img src="images/intents.png" alt="intents">
-
-    <h2>Now, we’ll login to our bot and bring it online. Remember your bot’s token from earlier? We’ll use that to log into our bot and bring it online for the first time! Add “client.login(“YOUR TOKEN HERE”);” to the very end of the code, and be sure to replace “your token here” with your token, making sure it is surrounded by double quotations.</h2>
-    <img src="images/token.png" alt="login">
-
-    <h2>Back in the terminal, type “node index.js” Your bot should appear online in your server! However, it won’t be doing much yet, you’ll have to add some commands.</h2>
-    <img src="images/botonline.png" alt="botonline">
-
-    <h2>We’ll first create a message in your terminal so you know your bot successfully connected to Discord. For this we’ll use the Events constant we created earlier and use it to check for when the bot has successfully connected. Add “client.once(Events.ClientReady, c => {});” before our bot’s login. Events.ClientReady lets our code know when the Client (the bot) has achieved a successful connection.</h2>
-    <img src="images/onceready.png" alt="onceready">
-
-    <h2>You’ll also notice the “c” that we added into the code. We use 'c' for the event parameter to keep it separate from the already defined 'client'. Inside of the curly brackets is where we’ll place our code to run and we’ll be sending a message in the terminal using the “console.log” function. Inside of the curly brackets, add “console.log(`${c.user.tag} is now connected to Discord!`);”.</h2>
-    <img src="images/connectedcode.png" alt="connectedcode">
-
-    <h2>Now when you use the “node index.js” command you’ll receive a message in your terminal telling you that the bot is connected to Discord.</h2>
-    <img src="images/connectedterminal.png" alt="connected">
-
-    <h2>Congratulations! Your bot is now online!</h2>
-
-    <h1>Basic message commands</h1>
-
-    <h2>Now that your bot is online, you’ll need to add some interactions with it. We’ll create a simple ‘ping’ command that will send back the message “pong”. First, you’ll need to have code run whenever a message is sent. Add “client.on(‘messageCreate’, message => {});” between the login and our connect code. This will let the code know whenever a message is sent and then the content of the message will be stored in the “message” that we placed afterwards.</h2>
-    <img src="images/messagecreate.png" alt="messagecreate">
-
-    <h2>Inside of the curly brackets, we’ll next add a simple check to prevent the bot from looping. Add “if(!message.author.bot){}”. This will prevent the bot from reading its own messages.</h2>
-    <img src="images/authorbot.png" alt="authorbot">
-
-    <h2>Now we’ll add the ping command. Add “if(message.content === ‘ping’){}”. This will check if the message that was sent was the word “ping”.</h2>
-    <img src="images/messageping.png" alt="ping">
-
-    <h2>Now we’re on the last step. We’ll finally send a reply message, in this case “Pong!”. Add “message.channel.send(“Pong!”);” This will send the response into the same channel as the original message.</h2>
-    <img src="images/sendpong.png" alt="sendpong">
-
-    <h2>Finally, back in the terminal, type “node index.js” once again and head over to your Discord server. Now when you type “ping” the bot should send “Pong!”.</h2>
-    <img src="images/finalimage.png" alt="pingpong">
-
-    <h2>Congratulations! Your bot is now working! You can add as many of these commands as you would like!</h2>
-    <img src="images/finalcode.png" alt="finalcode">
-</body>
+    </main>
+    </body>
 </html>
