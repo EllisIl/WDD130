@@ -25,82 +25,80 @@ Fonts are separated by a | */
   --nav-hover-link-color: #679436;
   --nav-hover-background-color: #A5BE00;
 }
-
 body {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 4em;
-  font-size: 18px;
-  text-align: center;
-}
-img {
-  display: block;
-  margin: 0 auto;
-}
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--heading-font);
-  color: var(--headline-color-on-white);
-}
-h2 {
-  text-align: center;
-}
-header {
-  padding: 1em;
-  text-align: center;
-  color: var(--paragraph-color-on-color);
-  background-color: var(--paragraph-background-color);
-}
-p {
-  font-family: var(--paragraph-font);
-  color: var(--paragraph-color);
-  padding: 1em;
-}
-p.colored {
-  background-color: var(--paragraph-background-color);
-  color: var(--paragraph-color-on-color);
-}
-
-nav {
-  background-color: var(--nav-background-color);
-  line-height: 3em;
-  text-align: center;
-  font-size: 1.2em;
-  list-style-type: none;
-  display: flex;
-}
-nav a {
-  padding:1em;
-  min-width: 120px;
-  text-decoration: none;
-  padding: 10px;
-}
-nav a:link, nav a:visited {
-  color: var(--nav-link-color);
-}
-nav a:hover {
-  color: var(--nav-hover-link-color);
-  background-color: var(--nav-hover-background-color);
-}
-#active{
-  color: var(--nav-hover-link-color);
-  background-color: var(--nav-hover-background-color);
-}
-header {
-  display: block;
-}
-header img{
-  float: left;
-  height: 100px;
-}
-nav {
-  width: fit-content;
-  height: 70px;
-  text-align: center;
+  background-color: var(--primary-color);
+  height: 100%;
 }
 main {
+  margin: 0 auto;
+  margin-top: 5em;
+  max-width: 1000px;
+}
+h2.intro {
   background-color: var(--paragraph-background-color);
-  padding: 5px;
+  color: var(--paragraph-color-on-color);
+  padding: 2em;
+}
+h1 {
+  display: block;
+  padding: 1em;
+  color: var(--headline-color-on-color);
+  background-color: var(--headline-color-on-white);
+}
+h2 {
+  display: block;
+  padding: 1em;
+  text-align: center;
+  background-color: var(--nav-hover-link-color);
+  border-radius: 2em;
+  color: var(--primary-color);
 }
 main img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 50%;
+  background-color: var(--headline-color-on-white);
+  padding: 1em;
+
 }
+/* CSS for the navigation header */
+
+header img{
+  height: 5em;
+  float: left;
+}
+.navigation-header {
+  display:inline-block;
+  width: 100%;
+  top: 0;
+  position: fixed;
+}
+.navbar {
+  overflow: auto;
+  height: 5em;
+}
+
+.navbar a {
+  height: 1.5em;
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: var(--paragraph-color-on-color);
+  text-decoration: none;
+  font-size: 17px;
+  background-color: var(--paragraph-color-on-white);
+}
+
+.navbar a:hover {
+  background-color: var(--nav-hover-link-color);
+  color: var(--nav-link-color)
+}
+
+#active {
+  background-color: var(--nav-hover-link-color);
+  color: var(--nav-link-color)
+  
+}
+
+/* Navigation menu */
