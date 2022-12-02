@@ -33,12 +33,13 @@ body {
         var(--accent2-color) 60%
     );
 }
+  
 main {
   margin: 0 auto;
   margin-top: 5em;
   max-width: 1000px;
 }
-h2.intro {
+.intro {
   background-color: var(--headline-color-on-white);
   color: var(--paragraph-color-on-color);
   padding: 2em;
@@ -48,6 +49,7 @@ h1 {
   padding: 1em;
   color: var(--headline-color-on-color);
   background-color: var(--headline-color-on-white);
+  font-family: var(--heading-font);
 }
 h2 {
   display: block;
@@ -56,6 +58,7 @@ h2 {
   background-color: var(--nav-hover-link-color);
   border-radius: 2em;
   color: var(--primary-color);
+  font-family: var(--paragraph-font);
 }
 main img{
   display: block;
@@ -92,6 +95,7 @@ header img{
   text-decoration: none;
   font-size: 17px;
   background-color: var(--paragraph-color-on-white);
+  font-family: var(--heading-font);
 }
 
 .navbar a:hover {
@@ -105,4 +109,14 @@ header img{
   
 }
 
-/* Navigation menu */
+@media screen and (max-width: 900px) {
+  h2 {
+    font-size: 15px;
+  }
+  .navbar a {
+    font-size: 15px;
+  }
+  main img{
+    padding: 0.5em;
+  }
+}

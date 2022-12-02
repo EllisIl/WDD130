@@ -109,4 +109,14 @@ header img{
   
 }
 
-/* Navigation menu */
+@media screen and (max-width: 900px) {
+  h2 {
+    font-size: 15px;
+  }
+  .navbar a {
+    font-size: 15px;
+  }
+  main img{
+    padding: 0.5em;
+  }
+}
