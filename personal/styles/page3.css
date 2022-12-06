@@ -113,10 +113,10 @@ header img{
   h2 {
     font-size: 15px;
   }
-  main img {
-    padding: 0.5em;
-  }
   .navbar a {
     font-size: 15px;
+  }
+  main img{
+    padding: 0.5em;
   }
 }
